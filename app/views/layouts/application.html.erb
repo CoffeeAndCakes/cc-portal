@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CcPortal</title>
+  <title>C&amp;C -Coffee and Cakes-</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Coffee and Cakes</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">HOME</a></li>
+          <li class="dropdown">
+            <a href="/events" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENT<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/events">index</a></li>
+              <li><a href="/events/new.html">new</a></li>
+              <li><a href="/events/edit.html">edit</a></li>
+              <li><a href="/events/show.html">show</a></li>
+            </ul>
+          <li class="dropdown">
+            <a href="/users" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEMBER<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/users">index</a></li>
+              <li><a href="/users/new.html">new</a></li>
+              <li><a href="/users/edit.html">edit</a></li>
+              <li><a href="/users/show.html">show</a></li>
+              <!-- <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li> -->
+            </ul>
 
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="../navbar/">Default</a></li>
+          <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li> -->
+          <li>
+            <!-- 4.ボタン -->
+            <button type="button" class="btn btn-default navbar-btn">
+                <span class="glyphicon glyphicon-envelope"></span>
+            </button>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>背景に画像を入れたい</h1>
+      <p><em>一杯のコーヒーはインスピレーションを与え,一杯のブランデーは苦悩を取り除く<br />ルートヴィヒ・ヴァン・ベートーヴェン</em></p>
+    </div>
+  </div>
 <%= yield %>
 
 </body>

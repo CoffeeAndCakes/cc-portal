@@ -1,4 +1,5 @@
-<h1>ALL EVENTS</h1>
+<div class="container">
+<h1>過去のイベント</h1>
 
 <table>
  <tr>
@@ -6,7 +7,7 @@
    <th>Contents</th>
  </tr>
 
- <% @events.each do |event| %>
+<!--  <% @events.each do |event| %>
    <tr>
      <td><%= event.title %></td>
      <td><%= event.contents %>　さん</td>
@@ -14,3 +15,19 @@
    </tr>
  <% end %>
 </table>
+ -->
+<div class="row">
+ <% @events.each do |event| %>
+<div class="col-xs-4 col-lg-4">
+  <h3><%= event.title %></h3>
+  <p><%= event.contents %></p>
+  <p class="btn btn-default" href="#" role="button">&raquo;<%= link_to 'Show', event_path(event) %></p>
+</div><!--/.col-xs-4.col-lg-4-->
+
+<% end %>
+<!-- /row --></div>
+<hr>
+<footer>
+<p>&copy; 2015 footer, Inc.</p>
+</footer>
+<!-- container --></div>
