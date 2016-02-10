@@ -21,7 +21,9 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="/">HOME</a></li>
-          <li class="dropdown">
+          <li><a href="/events">EVENT</a></li>
+          <li><a href="/users">MEMBER</a></li>
+          <!--<li class="dropdown">
             <a href="/events" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENT<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="/events">index</a></li>
@@ -36,12 +38,12 @@
               <li><a href="/users/new.html">new</a></li>
               <li><a href="/users/edit.html">edit</a></li>
               <li><a href="/users/show.html">show</a></li>
-              <!-- <li role="separator" class="divider"></li>
+              <li role="separator" class="divider"></li>
               <li class="dropdown-header">Nav header</li>
               <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li> -->
+              <li><a href="#">One more separated link</a></li>
             </ul>
-
+             -->
           </li>
         </ul>
 
@@ -61,11 +63,35 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1>背景に画像を入れたい</h1>
-      <p><em>一杯のコーヒーはインスピレーションを与え,一杯のブランデーは苦悩を取り除く<br />ルートヴィヒ・ヴァン・ベートーヴェン</em></p>
+      <h1>トップページに移設予定</h1>
+      <script type="text/javascript">
+      <!--
+      var msg = new Array();
+      msg[0] = '<p><em>一杯のコーヒーはインスピレーションを与え,一杯のブランデーは苦悩を取り除く<br />ルートヴィヒ・ヴァン・ベートーヴェン</em></p>';
+      msg[1] = '<p><em>よいコーヒーとは、悪魔のように黒く、地獄のように熱く、天使のように純粋で、愛のように甘い<br />シャルル＝モーリス・ド・タレーラン＝ペリゴール</em></p>';
+      msg[2] = '<p><em>数学者はコーヒーを定理に変える機械だ<br />ポール・エルデシュ</em></p>';
+      msg[3] = '<p><em>強いコーヒーをたっぷり飲めば目がさめる。コーヒーは暖かさと不思議な力と、心地よき苦痛を与えてくれる。余は無感よりも、苦痛を好みたい。<br />ナポレオン・ボナパルト</em></p>';
+      msg[4] = '<p><em>人間の意思の力はその人が飲んだコーヒーの量に比例する<br />ジェームス・マッキントッシュ</em></p>';
+      msg[5] = '<p><em>更新しよう、さすれば内容が変わるだろう<br />京ニャ</em></p>';
+      var no = Math.floor(Math.random() * msg.length);
+      // 表示
+      document.write(msg[no]);
+      // 表示
+      // -->
+      </script>
     </div>
   </div>
 <%= yield %>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73588283-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
