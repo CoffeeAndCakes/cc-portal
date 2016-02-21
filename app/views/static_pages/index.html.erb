@@ -1,22 +1,15 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="mainVisual">
   <div class="jumbotron">
-  <div class="container">
-    <script type="text/javascript">
-    <!--
-    var msg = new Array();
-    msg[0] = '<blockquote><p>一杯のコーヒーはインスピレーションを与え,一杯のブランデーは苦悩を取り除く.</p><footer><cite title="Source Title">ルートヴィヒ・ヴァン・ベートーヴェン</cite></footer></blockquote>';
-    msg[1] = '<blockquote><p>よいコーヒーとは、悪魔のように黒く,地獄のように熱く、天使のように純粋で,愛のように甘い.</p><footer><cite title="Source Title">シャルル＝モーリス・ド・タレーラン＝ペリゴール</cite></footer></blockquote>';
-    msg[2] = '<blockquote><p>数学者はコーヒーを定理に変える機械だ.</p><footer><cite title="Source Title">ポール・エルデシュ</cite></footer></blockquote>';
-    msg[3] = '<blockquote><p>強いコーヒーをたっぷり飲めば目がさめる.コーヒーは暖かさと不思議な力と,心地よき苦痛を与えてくれる.余は無感よりも,苦痛を好みたい.</p><footer><cite title="Source Title">ナポレオン・ボナパルト</cite></footer></blockquote>';
-    msg[4] = '<blockquote><p>人間の意思の力はその人が飲んだコーヒーの量に比例する.</p><footer><cite title="Source Title">ジェームス・マッキントッシュ</cite></footer></blockquote>';
-    var no = Math.floor(Math.random() * msg.length);
-    document.write(msg[no]);
-    // -->
-    </script>
-  <!-- /container--></div>
-<!-- /jumbotron--></div>
-<!-- /mainVisual--></div>
+    <div class="container">
+      <blockquote>
+        <p><%=@message.message%></p>
+        <footer>
+        <cite title="Source Title"><%=@message.by%></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
 
 <div class="container">
 <pre><kbd>new</kbd>&nbsp;2016.2.17&nbsp;お知らせやできごとをいれようかな</pre>
