@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+CSV.foreach('db/message.csv') do |row|
+  Message.create(
+    message: row[0],
+    by: row[1]
+  )
+end
