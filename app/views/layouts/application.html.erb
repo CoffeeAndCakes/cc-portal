@@ -20,54 +20,30 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="/">HOME</a></li>
           <li><a href="/events">EVENT</a></li>
           <li><a href="/users">MEMBER</a></li>
-          <!--<li class="dropdown">
-            <a href="/events" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENT<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/events">index</a></li>
-              <li><a href="/events/new.html">new</a></li>
-              <li><a href="/events/edit.html">edit</a></li>
-              <li><a href="/events/show.html">show</a></li>
-            </ul>
-          <li class="dropdown">
-            <a href="/users" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEMBER<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="/users">index</a></li>
-              <li><a href="/users/new.html">new</a></li>
-              <li><a href="/users/edit.html">edit</a></li>
-              <li><a href="/users/show.html">show</a></li>
-              <li role="separator" class="divider"></li>
-              <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-             -->
-          </li>
+          <li><a href="/">PROJECT</a></li>
         </ul>
-
         <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="">
             <script>
-//今日の日付データを変数hidukeに格納
-var hiduke=new Date();
-//年・月・日・曜日を取得する
-var year = hiduke.getFullYear();
-var month = hiduke.getMonth()+1;
-var day = hiduke.getDate();
-document.write(year+"."+month+"."+day);
-</script></a></li>
-          <!-- <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li> -->
+            //今日の日付データを変数hidukeに格納
+            var hiduke=new Date();
+            //年・月・日・曜日を取得する
+            var year = hiduke.getFullYear();
+            var month = hiduke.getMonth()+1;
+            var day = hiduke.getDate();
+            document.write(year+"."+month+"."+day);
+            </script></a>
+          </li>
           <li>
-            <!-- 4.ボタン -->
             <button type="button" class="btn btn-default navbar-btn">
                 <span class="glyphicon glyphicon-envelope"></span>
             </button>
           </li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
     </div>
   </nav>
 <%= yield %>
