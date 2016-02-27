@@ -23,6 +23,15 @@
     <%= f.label :message %><br>
     <%= f.text_area :message %>
   </div>
+
+  <div class="field">
+    <%= f.label :icon %><br>
+    <%= f.radio_button :icon, 1 %> <%= f.label 1, image_tag("icon_01.png") %>
+    <%= f.radio_button :icon, 2 %> <%= f.label 2, image_tag("icon_02.png")%>
+    <%= f.radio_button :icon, 3 %> <%= f.label 3, image_tag("icon_03.png")%>
+    <%= f.radio_button :icon, 4 %> <%= f.label 4, image_tag("icon_04.png")%>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

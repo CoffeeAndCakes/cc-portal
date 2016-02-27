@@ -13,3 +13,13 @@ CSV.foreach('db/message.csv') do |row|
     by: row[1]
   )
 end
+
+CSV.foreach('db/event.csv') do |row|
+  Event.create(
+    title: row[0],
+    contents: row[1],
+    presenter_id: row[2],
+    date: row[3],
+    place: row[4]
+  )
+end
