@@ -1,12 +1,23 @@
-<h1>Events#new</h1>
+<div class="SubmainVisual">
+  <div class="Subjumbotron">
+  <!-- /jumbotron--></div>
+<!-- /mainVisual--></div>
+<div class="container">
+  <h1>イベントログ登録</h1>
+    <div class="col-md-4">&nbsp;</div>
+    <div class="col-md-4 col-md-offset-4"><p>
+    <button type="button" class="btn btn-default btn-sm"><%= link_to 'イベントログへもどる', events_path %></button></p>
+    </div>
+<!-- /container--></div>
+
+<div class="container">
 <%= form_for :event, url: events_path do |f| %>
   <p>
-    <%= f.label :title %><br>
+    <%= f.label :タイトル %><br>
     <%= f.text_field :title %>
   </p>
-
   <p>
-    <%= f.label :contents %><br>
+    <%= f.label :内容 %><br>
     <%= f.text_area :contents %>
   </p>
 
@@ -14,3 +25,4 @@
     <%= f.submit %>
   </p>
 <% end %>
+<!-- container --></div>
