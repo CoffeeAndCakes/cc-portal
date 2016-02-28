@@ -1,19 +1,16 @@
-<h1>Events#show</h1>
-<p>
-<%= @event.title %><br>
-<%= @event.contents %>
-</p>
+<div class="SubmainVisual">
+  <div class="Subjumbotron">
+  <!-- /jumbotron--></div>
+<!-- /mainVisual--></div>
+<div class="container">
+  <h1><%= @event.title %></h1>
+    <div class="col-md-4">&nbsp;</div>
+    <div class="col-md-4 col-md-offset-4"><p>
+    <button type="button" class="btn btn-default btn-sm"><%= link_to 'イベントログへもどる', events_path %></button></p>
+    </div>
+<!-- /container--></div>
 
-<p>やあ （´・ω・｀)<br>
-ようこそ、バーボンハウスへ。<br>
-このテキーラはサービスだから、まず飲んで落ち着いて欲しい。<br>
-<br>
-うん、「また」なんだ。済まない。<br>
-仏の顔もって言うしね、謝って許してもらおうとも思っていない。<br>
-<br>
-でも、このスレタイを見たとき、君は、きっと言葉では言い表せない<br>
-「ときめき」みたいなものを感じてくれたと思う。<br>
-殺伐とした世の中で、そういう気持ちを忘れないで欲しい<br>
-そう思って、このスレを立てたんだ。<br>
-<br>
-じゃあ、注文を聞こうか。</p>
+<div class="container">
+<p><%= @event.contents %></p>
+
+<!-- container --></div>
