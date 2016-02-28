@@ -1,19 +1,22 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @user.twitter_id %>
-</p>
-
-<p>
-  <strong>Message:</strong>
-  <%= @user.message %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="SubmainVisual">
+  <div class="Subjumbotron">
+  <!-- /jumbotron--></div>
+<!-- /mainVisual--></div>
+<div class="container">
+  <h1>C&amp;C&nbsp;メンバー<%= notice %></h1>
+    <div class="col-md-4">&nbsp;</div>
+    <div class="col-md-4 col-md-offset-4">
+    <p>&nbsp;
+    </p>
+    </div>
+<!-- /container--></div>
+<div class="container">
+  <p><strong>Name:</strong><%= @user.name %>
+  </p>
+  <p><strong>Twitter:</strong><%= @user.twitter_id %>
+  </p>
+  <p><strong>Message:</strong><%= @user.message %>
+  </p>
+  <p><button type="button" class="btn btn-default btn-sm"><%= link_to 'メンバーページへもどる', users_path %></button>
+  </p>
+<!-- /container--></div>
