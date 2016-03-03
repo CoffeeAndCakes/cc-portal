@@ -16,7 +16,7 @@
     <div class="col-xs-6">
     <%= image_tag("icon_0#{user.icon}.png") %>
     <h5><%= user.name %></h5>
-    <small>Twitter&nbsp;:&nbsp;<%= user.twitter_id %><br />
+    <small>Twitter&nbsp;:&nbsp;<%= link_to user.twitter_id, "https://twitter.com/#{user.twitter_id}", :target=>["_blank"] %><br />
     <%= user.message %><br />
     </small>
     </div>
