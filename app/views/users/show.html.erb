@@ -13,7 +13,7 @@
 <div class="container">
   <p><strong>Name:</strong><%= @user.name %>
   </p>
-  <p><strong>Twitter:</strong><%= @user.twitter_id %>
+  <p><strong>Twitter:</strong><%= link_to @user.twitter_id, "https://twitter.com/#{@user.twitter_id}", :target=>["_blank"] %>
   </p>
   <p><strong>Message:</strong><%= @user.message %>
   </p>
