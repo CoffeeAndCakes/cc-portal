@@ -107,6 +107,11 @@
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
+
+.col-event img{
+  max-height: 80px;
+  max-width: 200px;
+}
 @media (min-width: 992px){
   .col-md-4{
     padding-right: 21px;

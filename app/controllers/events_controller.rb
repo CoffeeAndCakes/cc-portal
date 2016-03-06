@@ -12,7 +12,7 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event = Event.new(params.require(:event).permit(:title, :contents))
+    @event = Event.new(params.require(:event).permit(:title, :contents, :image_url))
     @event.save
     redirect_to @event
   end
