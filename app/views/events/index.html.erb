@@ -4,19 +4,20 @@
 <!-- /mainVisual--></div>
 <div class="container">
   <h1>イベントログ</h1>
-    <div class="col-md-4">&nbsp;</div>
-      <div class="col-md-4 col-md-offset-4">
-        <p><button type="button" class="btn btn-default btn-sm"><%= link_to 'イベントログ登録', new_event_path %></button></p>
-      </div>
+  <div class="col-md-4">&nbsp;</div>
+  <div class="col-md-4 col-md-offset-4">
+    <p><button type="button" class="btn btn-default btn-sm"><%= link_to 'イベントログ登録', new_event_path %></button></p>
+  </div>
 <!-- /container--></div>
 
 <div class="container">
   <div class="row">
    <% @events.each do |event| %>
-    <div class="col-xs-3 col-lg-4">
+    <div class="col-event">
       <h4><%= link_to event.title, event_path(event) %></h4>
-      <p><!--<%=  %>--><img src="http://saradnentika.net/img/defe_title32.jpg"></p>
-      <p><%= event.contents %></p>
+      <p class="event_text"><img src="http://saradnentika.net/img/defe_title32.jpg">
+        <%= event.contents %>
+      </p>
     </div><!--/.col-xs-4.col-lg-4-->
   <% end %>
   <!-- /row --></div>
