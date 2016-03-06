@@ -166,17 +166,21 @@
  }
 
 .project_box{
-    margin-top: 50px;
+  margin-top: 50px;
   background-color: #eee;
   color: inherit;
-    border-radius: 6px;
-    padding: 30px;
+  border-radius: 6px;
+  padding: 30px;
 }
 .project_box kbd{
   font-size: 10px;
 }
+
 .project_box .text{
   margin-top: 25px;
   font-size: 13px;
-line-height: 21px;
+  line-height: 21px;
+}
+.container_foot {
+  margin-top: 40px;
 }
