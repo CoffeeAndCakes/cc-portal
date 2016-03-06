@@ -6,9 +6,9 @@
   <h1>C&amp;C&nbsp;メンバー登録</h1>
     <div class="col-md-4">&nbsp;</div>
     <div class="col-md-4 col-md-offset-4">
-    <p>
-    <button type="button" class="btn btn-default btn-sm"><%= link_to 'メンバーページへもどる', users_path %></button>
-    </p>
+      <p>
+      <%= link_to 'メンバーページへもどる', {:controller => :users, :action => :index}, :class => 'btn btn-default btn-sm' %>
+      </p>
     </div>
 <!-- /container--></div>
 <div class="container">
