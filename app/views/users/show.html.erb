@@ -17,6 +17,7 @@
   </p>
   <p><strong>Message:</strong><%= @user.message %>
   </p>
-  <p><button type="button" class="btn btn-default btn-sm"><%= link_to 'メンバーページへもどる', users_path %></button>
+  <p>
+    <%= link_to 'メンバーページへもどる', users_path, class: "btn btn-default btn-sm" %>
   </p>
 <!-- /container--></div>
