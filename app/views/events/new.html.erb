@@ -14,6 +14,13 @@
 
 <div class="container">
 <%= form_for :event, url: events_path do |f| %>
+
+  <% if @event && @event.errors.any? %>
+    <% @event.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  <% end %>
+
   <p>
     <%= f.label :タイトル %><br>
     <%= f.text_field :title %>
@@ -21,6 +28,10 @@
   <p>
     <%= f.label :内容 %><br>
     <%= f.text_area :contents %>
+  </p>
+  <p>
+    <%= f.label :開催日 %><br>
+    <%= f.date_select :date %>
   </p>
   <p>
     <%= f.label :画像URL %><br>
