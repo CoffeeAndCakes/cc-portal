@@ -13,5 +13,12 @@
 <!-- /container--></div>
 <div class="container">
   <p class="date"><%= @event.date %></p>
+  <p>
+    <% if @event.image_url%>
+      <%= image_tag @event.image_url %>
+    <% else %>
+      <%= image_tag("no_image.png")%>
+    <% end %>
+  </p>
   <p><%= @event.contents %></p>
 <!-- container --></div>
