@@ -28,7 +28,7 @@
  }
 
 .mainVisual {
-   background-image: url(/assets/cc_main01.png);
+   background-image: url(/assets/cc_main03.png);
    background-repeat: no-repeat;
    height: 260px;
    margin-bottom: 30px;
@@ -65,8 +65,9 @@
  }
 
  .SubmainVisual {
-    background-image: url(/assets/cc_main02.png);
+    background-image: url(/assets/cc_main01.png);
     background-repeat: no-repeat;
+    background-position: 0 -240px;
     height: 100px;
     margin-bottom: 30px;
  }
