@@ -12,6 +12,6 @@
     </div>
 <!-- /container--></div>
 <div class="container">
-  <p class="date"><%= @event.date %></p>
+  <p class="date"><%= @event.date.strftime("%Y年%m月%d日") %></p>
   <p><%= @event.contents %></p>
 <!-- container --></div>
