@@ -113,6 +113,16 @@
   max-height: 80px;
   max-width: 200px;
 }
+
+.col-event .date{
+  text-align: right;;
+  font-size: 11px;
+}
+
+.container .date{
+  font-weight: bold;
+}
+
 @media (min-width: 992px){
   .col-md-4{
     padding-right: 21px;
