@@ -148,6 +148,20 @@
 }
 
 @media (max-width: 400px){
+  .mainVisual .jumbotron blockquote {
+    padding: 11px 8px 0;
+    text-align: center;
+    border-left: 0px;
+    font-size: 14px;
+}
+
+.mainVisual .jumbotron p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 7px;
+    line-height: 2.0em;
+    letter-spacing: 0em;
+}
   .col-event {
       padding: 10px 20px;
     }
