@@ -3,7 +3,8 @@ lock '3.4.0'
 
 set :application, 'cc-portal'
 set :repo_url, 'git@github.com:kyonya/cc-portal.git'
-set :deploy_to, '/home/gennei/coffee-and-cakes'
+set :deploy_to, '/var/www/cc-portal'
+set :log_level, :debug
 
 set :keep_releases, 3
 set :rbenv_type, :user # :system or :user
@@ -23,5 +24,9 @@ namespace :deploy do
       # end
     end
   end
-
+  desc 'restart application'
+  task :restart do
+    invoke 'unicorn:restart'
+  end
+  after 'deploy:publishing', 'deploy:restart'
 end

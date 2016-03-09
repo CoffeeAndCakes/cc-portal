@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+gem 'unicorn', '~> 5.0', '>= 5.0.1'
 
 group :development, :test do
   gem 'byebug'
@@ -22,6 +23,7 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
+  gem 'capistrano3-unicorn'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
