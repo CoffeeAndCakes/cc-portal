@@ -11,11 +11,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
-gem 'unicorn', '~> 5.0', '>= 5.0.1'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'just-datetime-picker'
 gem 'active_admin_environment'
+
+platforms :ruby do
+  gem 'unicorn', '~> 5.0', '>= 5.0.1'
+end
 
 group :development, :test do
   gem 'byebug'
