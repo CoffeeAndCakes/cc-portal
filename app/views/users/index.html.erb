@@ -4,24 +4,24 @@
 <!-- /mainVisual--></div>
 <div class="container">
   <h1>C&amp;C&nbsp;メンバー</h1>
-    <div class="col-md-4">&nbsp;</div>
-    <div class="col-md-4 col-md-offset-4">
-      <p>
-        <%= link_to 'メンバー登録', new_user_path, class: 'btn btn-default btn-sm' %>
-      </p>
-    </div>
+  <div class="col-md-4">&nbsp;</div>
+  <div class="col-md-4 col-md-offset-4">
+    <p>
+      <%= link_to 'メンバー登録', new_user_path, class: 'btn btn-default btn-sm' %>
+    </p>
+  </div>
 <!-- /container--></div>
 <div class="container">
   <p id="notice"><%= notice %></p>
   <div class="row">
     <% @users.each do |user| %>
     <div class="col-xs-6">
-    <%= image_tag("icon_0#{user.icon}.png") %>
-    <h5><%= user.name %></h5>
-    <small>Twitter&nbsp;:&nbsp;<%= link_to user.twitter_id, "https://twitter.com/#{user.twitter_id}", :target=>["_blank"] %><br />
-    <%= user.message %><br />
-    </small>
+      <%= image_tag("icon_0#{user.icon}.png") %>
+      <h5><%= user.name %></h5>
+      <small>Twitter&nbsp;:&nbsp;<%= link_to user.twitter_id, "https://twitter.com/#{user.twitter_id}", :target=>["_blank"] %><br />
+      <%= user.message %><br />
+      </small>
     </div>
-  <% end %>
+    <% end %>
   </div>
-  <!-- /container--></div>
+<!-- /container--></div>

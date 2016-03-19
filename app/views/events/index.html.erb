@@ -11,18 +11,18 @@
 
 <div class="container">
   <div class="row">
-   <% @events.each do |event| %>
+  <% @events.each do |event| %>
     <div class="col-event">
-      <h4><%= link_to event.title, event_path(event) %></h4>
-      <p class="event_text">
-        <% if event.image_url%>
-          <%= image_tag event.image_url %>
+    <h4><%= link_to event.title, event_path(event) %></h4>
+    <p class="event_text">
+      <% if event.image_url%>
+      <%= image_tag event.image_url %>
         <% else %>
-          <%= image_tag("no_image.png")%>
+        <%= image_tag("no_image.png")%>
         <% end %>
-        <%= event.contents %>
-        <p class="date"><%= event.date.strftime("%Y年%m月%d日") %></p>
-      </p>
+      <%= event.contents %>
+    </p>
+    <p class="date"><%= event.date.strftime("%Y年%m月%d日") %></p>
     </div><!--/.col-xs-4.col-lg-4-->
   <% end %>
   <!-- /row --></div>

@@ -14,13 +14,11 @@
 
 <div class="container">
 <%= form_for :event, url: events_path do |f| %>
-
   <% if @event && @event.errors.any? %>
     <% @event.errors.full_messages.each do |message| %>
-      <li><%= message %></li>
+    <li><%= message %></li>
     <% end %>
   <% end %>
-
   <p>
     <%= f.label :タイトル %><br>
     <%= f.text_field :title %>
