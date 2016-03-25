@@ -1,4 +1,5 @@
 # Hello C&C world!
+[![Slack Status](https://slack.coffeeandcakes.com/badge.svg)](https://coffeeandcakes.slack.com)
 
 # Let's Development
 ## ruby
