@@ -1,5 +1,5 @@
 # Hello C&C world!
-[![Slack Status](https://slack.coffeeandcakes.com/badge.svg)](https://coffeeandcakes.slack.com)
+[![Slack Status](https://c-and-c-slackin.herokuapp.com//badge.svg)](https://c-and-c-slackin.herokuapp.com/)
 
 # Let's Development
 ## ruby
