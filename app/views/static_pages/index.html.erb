@@ -13,6 +13,10 @@
 </div>
 <div class="container">
   <% @news.each do |x| %>
-    <pre>  <%= x.date.strftime("%Y.%m.%d") %> <%=  x.text %></pre>
+      <% if Date.today - x.date < 30 %>
+        <pre> <kbd>new</kbd> <%= x.date.strftime("%Y.%m.%d") %> <%=  x.text %></pre>
+      <%else%>
+        <pre> <%= x.date.strftime("%Y.%m.%d") %> <%=  x.text %></pre>
+      <% end %>
   <% end %>
 </div>
