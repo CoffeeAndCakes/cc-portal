@@ -12,8 +12,11 @@
   </div>
 </div>
 <div class="container">
-  <pre><kbd>new</kbd>&nbsp;2016.3.12&nbsp;サイトオープン</pre>
-  <pre><kbd>new</kbd>&nbsp;2016.3.9&nbsp;<a href="/projects">プロジェクトページ更新</a></pre>
-  <pre>2016.3.6&nbsp;検索サイトに表示されないようクローラー対策完了</pre>
-  <pre>2016.2.17&nbsp;開発スタート</pre>
+  <% @news.each do |x| %>
+      <% if Date.today - x.date < 30 %>
+        <pre> <kbd>new</kbd> <%= x.date.strftime("%Y.%m.%d") %> <%=  x.text %></pre>
+      <%else%>
+        <pre> <%= x.date.strftime("%Y.%m.%d") %> <%=  x.text %></pre>
+      <% end %>
+  <% end %>
 </div>
