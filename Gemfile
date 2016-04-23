@@ -15,6 +15,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'just-datetime-picker'
 gem 'active_admin_environment'
+gem 'dotenv-rails'
 
 platforms :ruby do
   gem 'unicorn', '~> 5.0', '>= 5.0.1'
