@@ -6,22 +6,21 @@ set :repo_url, 'git@github.com:kyonya/cc-portal.git'
 set :deploy_to, '/var/www/cc-portal'
 set :log_level, :debug
 
-set :keep_releases, 3
+set :linked_dirs, %w{bin log tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle}
+
 set :rbenv_type, :user # :system or :user
 set :rbenv_ruby, '2.2.3'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_map_bins, %w{rake gem bundle ruby rails}
-set :rbenv_roles, :all # default value
-set :linked_dirs, %w{bin log tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle}
-set :bundle_jobs, 4
+
+#set :bundle_env_variables, { nokogiri_use_system_libraries: 1 }
 
 namespace :deploy do
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
+  desc "Set Environment Values"
+  task :set_env_values do
+    on roles(:all) do
+      within release_path do
+        env_config = "/var/www/cc-portal/shared/.env"
+        execute :cp, "#{env_config} ./.env"
+      end
     end
   end
   desc 'restart application'
