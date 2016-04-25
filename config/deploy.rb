@@ -6,7 +6,7 @@ set :repo_url, 'git@github.com:kyonya/cc-portal.git'
 set :deploy_to, '/var/www/cc-portal'
 set :log_level, :debug
 
-set :linked_dirs, %w{bin log tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle}
+set :linked_dirs, %w{bin log　db tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle}
 
 set :rbenv_type, :user # :system or :user
 set :rbenv_ruby, '2.2.3'
