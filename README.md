@@ -19,13 +19,14 @@ homebrewというパッケージマネージャーをインストールしまし
 homebrew 含めて参考になるサイトは[こちら](http://qiita.com/keneo/items/1772adc2ebbde229fb71)
 
 パスの設定はが必要であるが必要そうなものは下記コマンドでインストール可のはず
->  
+```sh
 brew install nodejs  
 brew install git  
 brew install ruby-build  
 brew insatll rbenv  
 brew insatll sqlite  
 rbenv insatll 2.2.3  
+```
 
 ## github
 アカウントを作ってアカウントを教えてね  
